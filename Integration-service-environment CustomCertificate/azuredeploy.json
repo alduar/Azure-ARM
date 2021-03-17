@@ -212,6 +212,7 @@
       "apiVersion": "2019-05-01",
       "name": "[parameters('integrationServiceEnvironmentName')]",
       "location": "[parameters('location')]",
+
       "dependsOn": [
         "[resourceId('Microsoft.Network/virtualNetworks/', parameters('vnetName'))]",
         "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnet1Name'))]",
@@ -224,11 +225,7 @@
         "capacity": "[parameters('skuCapacity')]"
       },
       "properties": {
-        "certificates": {
-         "certificateIISLocal": {
-            "publicCertificate": "[parameters('certificateBase64')]",
-            "kind": "TrustedRoot"
-         },
+        
         "networkConfiguration": {
           "accessEndpoint": {
             "type": "[parameters('accessEndpointType')]"
@@ -247,6 +244,10 @@
               "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnet4Name'))]"
             }
           ]
+        },
+        "certificates":{
+          "localCertificate":"[parameters('certificateBase64')]",
+           "kind": "TrustedRoot"
         }
       }
     },
