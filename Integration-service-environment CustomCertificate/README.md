@@ -1,4 +1,4 @@
-# Provision an Integration Service Environment with a VNET, subnets, and managed connectors
+# Provision an Integration Service Environment with a VNET, subnets, and managed connectors and Custom Certificate
 
 ![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/201-integration-service-environment/PublicLastTestDate.svg)
 ![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/201-integration-service-environment/PublicDeployment.svg)
