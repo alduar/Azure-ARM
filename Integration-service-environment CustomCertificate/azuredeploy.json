@@ -8,6 +8,12 @@
         "description": "The name of the Integration Service Environment."
       }
     },
+    "certificateBase64": {
+      "type": "string",
+      "metadata": {
+        "description": "Crtificate in base64"
+      }
+    },
     "location": {
       "defaultValue": "[resourceGroup().location]",
       "type": "string",
@@ -218,6 +224,11 @@
         "capacity": "[parameters('skuCapacity')]"
       },
       "properties": {
+        "certificates": {
+         "certificateIISLocal": {
+            "publicCertificate": "[parameters('certificateBase64')]",
+            "kind": "TrustedRoot"
+         },
         "networkConfiguration": {
           "accessEndpoint": {
             "type": "[parameters('accessEndpointType')]"
