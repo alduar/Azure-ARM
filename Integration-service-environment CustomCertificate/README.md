@@ -9,8 +9,8 @@
 ![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/201-integration-service-environment/BestPracticeResult.svg)
 ![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/201-integration-service-environment/CredScanResult.svg)
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F201-integration-service-environment%2Fazuredeploy.json)
-[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F201-integration-service-environment%2Fazuredeploy.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Falduar%2FAzure-ARM%2Fmain%2FIntegration-service-environment%2520CustomCertificate%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Falduar%2FAzure-ARM%2Fmain%2FIntegration-service-environment%2520CustomCertificate%2Fazuredeploy.json)
 
 ## Overview
 
@@ -19,10 +19,11 @@ This template creates a VNET with four subnets then deploys an Integration Servi
 This template deploys the following resources:
 
 - Virtual Network
+- Custom Crtificate @by Alduar
 - Four Subnets
 - Integration Service Environment
   - Managed Connectors
-
+https://raw.githubusercontent.com/alduar/Azure-ARM/main/Integration-service-environment%20CustomCertificate/azuredeploy.json
 ## Managed Connectors
 
 All native connectors will be available by default in ISE. Refer to [documentation](https://docs.microsoft.com/en-us/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview#isolated-versus-global) to learn more about ISE specific Managed Connectors. These need to be specifically deployed into the ISE to be available (with the ISE label) in the Logic Apps editor. At the time of creation of this template, the possible list of values for the `managedConnectors` template parameter are:
